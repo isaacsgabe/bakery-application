@@ -15,6 +15,25 @@ public class Customer {
     private String Name;
     private String email;
     private String phoneNumber;
-    private String address;
+    private String streetAddress;
+    private String city;
+    private String state;
+    private String zipCode;
+    private String aptNumber;
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + Name + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", streetAddress='" + streetAddress + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zipCode='" + zipCode + '\'' +
+                ", aptNumber='" + aptNumber + '\'' +
+                '}';
+    }
 
 }

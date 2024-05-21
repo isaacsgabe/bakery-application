@@ -17,4 +17,14 @@ public class CustomerOrder {
     private Long customerId;
     private LocalDate orderDate;
     private LocalTime orderTime;
+
+    @Override
+    public String toString() {
+        return "CustomerOrder{" +
+                "order_id=" + order_id +
+                ", customerId=" + customerId +
+                ", orderDate=" + orderDate +
+                ", orderTime=" + orderTime +
+                '}';
+    }
 }

@@ -15,6 +15,16 @@ public class CombinedOrder {
     @OneToOne(cascade = CascadeType.ALL) // Ensure cascading operations
     private CustomerOrder customerOrder;
 
+    @OneToOne(cascade = CascadeType.ALL) // Ensure cascading operations
+    private Customer customerInfo;
+
     @OneToMany(cascade = CascadeType.ALL) // Ensure cascading operations
     private List<OrderItem> orderItems;
+
+    public CustomerOrder getCustomerOrder() {
+        if(customerOrder == null){
+            return new CustomerOrder();
+        }
+        return customerOrder;
+    }
 }

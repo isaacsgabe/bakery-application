@@ -12,11 +12,18 @@ import lombok.Data;
 public class Item{
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Double price;
-    private char size;
+    private String size;
     private String foodName;
 
-
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", price=" + price +
+                ", size='" + size + '\'' +
+                ", foodName='" + foodName + '\'' +
+                '}';
+    }
 }

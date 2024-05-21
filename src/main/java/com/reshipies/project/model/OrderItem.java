@@ -20,7 +20,17 @@ public class OrderItem {
     private long orderID;
 
     @Column(name = "item_id")
-    private int itemID;
+    private Long itemID;
+
+    @Override
+    public String toString() {
+        return "OrderItem{" +
+                "orderItemID=" + orderItemID +
+                ", quantity=" + quantity +
+                ", orderID=" + orderID +
+                ", itemID=" + itemID +
+                '}';
+    }
 
 }
 
